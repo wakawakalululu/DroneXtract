@@ -1,0 +1,24 @@
+# 构建产物
+DroneXtract.exe
+DroneXtract
+dist/
+*.exe
+!*.sh
+
+# 本地临时/开发脚本
+.localize/
+.tmp-*
+
+# 测试与运行输出
+flight-map.png
+*.log
+
+# 数据集（体积大，按需单独下载）
+/dataset/
+
+# 系统与本地文件
+.DS_Store
+Thumbs.db
+.env
+# 一次性发布脚本（含仓库发布逻辑，不入库）
+tools/publish.py
